@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+
+    .logo{
+        height: 170px;
+        width: 60px;
+        margin: 10px auto;
+        background-color: blueviolet;
+    }
+    .main{
+      background-color: #333333;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      padding: 0px 0px 50px 0px;
+    }
+    .container{
+        width: 1100px;
+        height: 2300;
+        border: 1px solid black; /*dotted solid dashed double*/
+        background-color: white;
+        margin:50px auto;
+    }
+    .judul{
+     
+        width:1100x;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .title{
+        border: 1px solid black; /*dotted solid dashed double*/
+        width:100%;
+        height: 120px;
+        padding-left: 20px;
+        background-color: #212121;
+        background-size: cover;
+        box-sizing: border-box;
+        color: white;
+        text-align: center;
+        position: relative; 
+        font-size: 30px;
+    }
+    .menu{
+        border: 1px solid black; /*dotted solid dashed double*/
+        width:1100px;
+        height: 60px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-top: 100px;
+        box-sizing: content-box;
+        text-align: center;
+        background-color: #545353;
+        text-align: left;
+        padding: 10px;
+        margin:30px auto
+    }
+    .containermenu{
+        width: 24.4%;
+        height: 100%;
+        float: left;
+        margin:3px 3px 3px 3px;
+        background-color: #6E6E6E;
+        text-align: center;
+        padding: 5px auto;
+    }
+    .containermenutext{
+        width: 100%;
+        height: 500px;
+        font-size: 23px;
+        float: left;
+        color: whitesmoke;
+        text-align: center;
+        margin: 17px auto;
+    }
+
+     .containercontent{
+        width: 1100px;
+        height: auto;
+        margin-top: 20px;
+        background-size: contain;
+/* 
+        background-color: #BFC0C2; */
+        padding: 3px auto;
+    }  
+
+    .banner{
+        width: 50%;
+        height: 431px;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black; /*dotted solid dashed double*/
+        background-image: url("foto/swampert.jpg");
+        margin-left: 20px;
+        margin-top: 20px;
+        float: left ;
+        background-size: contain;
+
+    }
+    .judulartikel{
+        width:  20%;
+        height: 70px;
+        padding-left:20px;
+        float: left ;
+        text-align: center;
+        position: relative;
+        font-size: 30px;
+    }
+    .konten{
+        width: 43%;
+        height: 403px;
+        
+        overflow: auto;
+        margin: 10px 10px 10px 10px;
+        float:  top; 
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        font-size: 28px;
+        padding: 3px auto;
+    }
+
+    .judulbawah{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        background-color: #B4B4B4;
+    }
+    
+
+    .containergallery{
+        width: 100%;
+        height: 1000px;
+        padding: 50px 50px 50px 80px;
+        text-align: center;
+        float: left;
+        box-sizing: border-box;
+        /* background-color: #F05A62; */
+        margin-top: 30px;
+    }
+    .gallery{
+        width: 278px;
+        height: 217px;
+        border: 5px solid black;
+        margin:50px 10px 50px 10px;
+        font-size: 30px;
+        float: left;    
+    }
+    .galleryin{
+        width: 100%;
+        height: 100%;   
+    }
+    .textgallery{
+        margin-top: 10px;
+        font-size: 35px;
+        
+    }
+    .footer{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    /* .modesiang{
+    
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .modemalam{
+        width: auto;
+        height: auto;
+        
+    }
+    .buttonmodesiang {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 16px;
+}
+    .buttonmodemalam {
+  padding: 15px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+
+/* .cobaevent1{
+    background-color: wheat;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+} */
+
+.mode{
+        
+        /* width: 120px;
+        height: 120PX; */
+        margin: 5px 5px 5px 5px;
+        text-align: center;
+        background-size: cover;
+    }
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</style>
+
+<!-- ////Data Bio///
+<div id="kontenFeraligathr" onclick="onFeraligathr()" >
+    <p>National No : 260<br>
+    <p>Type        : WATER GROUND<br>
+    <p>Species     : Mud Fish Pokémon<br>
+    <p>Weight	   : 81.9 kg (180.6 lbs)<br>
+    <p>Abilities   : Torrent Damp (hidden ability)<br>
+    <p>Local №     : 009 (Ruby/Sapphire/Emerald)<br>
+                     009 (Omega Ruby/Alpha Sapphire)<br> </p>
+</div>
+
+<div id="kontenmeganium" onclick="onMeganium()" >
+    <p>National No : 260<br>
+    <p>Type        : WATER GROUND<br>
+    <p>Species     : Mud Fish Pokémon<br>
+    <p>Weight	   : 81.9 kg (180.6 lbs)<br>
+    <p>Abilities   : Torrent Damp (hidden ability)<br>
+    <p>Local №     : 009 (Ruby/Sapphire/Emerald)<br>
+                     009 (Omega Ruby/Alpha Sapphire)<br> </p>
+</div> -->
+</head>
+<body>
+<div class="main">
+
+    <!-- ///MODE/// -->
+
+
+<div class="title">
+    <div class="ribbon"></div>
+
+    <h1>Pokemon Data</h1>
+</div>
+
+<div class="mode">
+    <button type="button"  onclick="ubahwarna_dark()" class="modemalam">
+    <p>mode malam</p>
+    </button>
+
+    <button type="button" onclick="ubahwarna_light()" class="modesiang">
+    <p>mode siang</p>
+    </button>
+
+    <button type="button" onclick="ubahwarna_normal()" class="modeNormal">
+        <p>mode Normal</p>
+        </button>
+</div>
+
+    <!-- ///MENU/// -->
+    <div class="menu"> 
+        <div class="containermenu"> 
+            <a href="#">
+            <div class="containermenutext"> 
+           <p>Home</p>
+        </div>
+      </a>
+        </div>
+        <div class="containermenu"> 
+            <a href="#">
+            <div class="containermenutext"> 
+           <p>About</p>
+        </div>
+      </a>
+        </div>
+        <div class="containermenu"> 
+            <a href="#">
+            <div class="containermenutext"> 
+           <p>Contact</p>
+        </div>
+      </a>
+        </div>
+        <div class="containermenu"> 
+            <a href="#">
+            <div class="containermenutext"> 
+           <p>Walkthrough</p>
+        </div>
+      </a>
+        </div>
+    </div>
+
+<!-- ///CONTAINER/// -->
+<div class="container">
+    <div class="judul" id="judul1"> 
+        <h1>Pokemon Info</h1>
+    </div>
+
+    <div class="containercontent">
+        
+    <div class="banner" id="banner"></div>
+    <div class="judulartikel">
+
+        <div id="nama"></div> </div> 
+    </div>
+    
+    <div class="konten" id="konten">
+        <div id="konten1"></div> 
+        <div id="konten2"></div>
+        <div id="konten3"></div>
+        <div id="konten4"></div>
+        <div id="konten5"></div>
+        <div id="konten6"></div>
+
+    </div>
+
+    
+</div> 
+
+<div class="judulbawah" id="judul2"> 
+    <h1>Pokemon List</h1>
+</div>
+<div class="containergallery" >
+    <div class="gallery" onclick="klikFeraligathr()">
+        <div class="galleryin"> 
+        <img src="foto/feraligathr.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Feraligathr</div>
+    </div>
+    <div class="gallery" onclick="klikMeganium()">
+        <div class="galleryin"> 
+        <img src="foto/meganium.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Meganium</div>
+    </div>
+    <div class="gallery" onclick="klikBlaziken()">
+        <div class="galleryin"> 
+        <img src="foto/blaziken.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Blaziken</div>
+    </div>
+    <div class="gallery" onclick="klikSceptile()">
+        <div class="galleryin"> 
+        <img src="foto/sceptile.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Sceptile</div>
+    </div>
+    <div class="gallery" onclick="klikTyphlosion()">
+        <div class="galleryin"> 
+        <img src="foto/typhlosion.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Typhlosion</div>
+    </div>
+    <div class="gallery" onclick="klikSwampert()">
+        <div class="galleryin"> 
+        <img src="foto/swampert.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Swampert</div>
+    </div>
+    <div class="gallery" onclick="klikBlastoise()">
+        <div class="galleryin"> 
+        <img src="foto/blastoise.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Blastoise</div>
+    </div>
+    <div class="gallery" onclick="klikCharizard()">
+        <div class="galleryin"> 
+        <img src="foto/charizard.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Charizard</div>
+    </div>
+    <div class="gallery" onclick="klikVenusaur()">
+        <div class="galleryin"> 
+        <img src="foto/venusaur.jpg" width="276px" height="216px" ></div>
+        <div class="textgallery">Venusaur</div>
+    </div>
+</div>
+</div>
+
+        <div class ="footer">
+            <p class="copyright"> LazuCopyright 2020</p>
+        </div>
+
+<div id="cobaeventku" class="cobaevent1" onmouseup="divkelakuan()"  onmousedown="divkelakuan()"></div>
+
+<!-- ///Data Nama Pokemon//
+
+<div  id="namaSwampert" onclick="namaFeraligathr()">
+    <h1>Feraligathr</h1>
+</div>
+
+<div  id="namaMeganium" onclick="namaMeganium()">
+    <h1>Meganium</h1>
+</div>
+
+<div  id="namaSwampert" onclick="namaSwampert()">
+    <h1>Swampert</h1>
+</div> -->
+
+</div>
+
+
+
+<script>
+
+var National_no = 'National No : ' 
+var Type        = 'Type : '
+var Species     = 'Species     : '
+var Height      = 'Height      : '
+var Weight      = 'Weight      : '
+var Abilities   = 'Abilities   : '
+
+var nSwampert = 'Swampert'
+var nScerptile = 'Scerptile'
+var nBlaziken = 'Blaziken'
+var nVenusaur = 'Venusaur'
+var nBlastoise = 'Blastoise'
+var nCharizard = 'Charizard'
+var nMeganium = 'Meganium'
+var nTypholision = 'Typholision'
+var nFeraligathr = 'Feraligathr'
+
+document.getElementById('konten1').innerHTML=National_no;
+document.getElementById('konten2').innerHTML=Type;
+document.getElementById('konten3').innerHTML=Species;
+document.getElementById('konten4').innerHTML=Height;
+document.getElementById('konten5').innerHTML=Weight;
+document.getElementById('konten6').innerHTML=Abilities;
+
+    
+    function ubahwarna_dark(){
+        document.getElementById('konten').style.backgroundColor="black";
+        document.getElementById('konten').style.color="white";
+    }
+
+    function ubahwarna_light(){
+        document.getElementById('konten').style.backgroundColor="yellow";
+        document.getElementById('konten').style.color="black";
+       }
+
+        function ubahwarna_normal(){
+        document.getElementById('konten').style.backgroundColor="whitesmoke";
+        document.getElementById('konten').style.color="black";
+        }
+
+    function divkelakuan(){
+        document.getElementById('cobaeventku').className="cobaevent1";
+        document.getElementById('cobaeventku').style.backgroundColor="black";
+        }
+
+
+        function klikBlaziken(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/blaziken.jpg')";
+        document.getElementById('nama').innerHTML=nBlaziken;
+        document.getElementById('konten1').innerHTML= National_no +'257';
+        document.getElementById('konten2').innerHTML= Type +'Fire Fighting' ;
+        document.getElementById('konten3').innerHTML= Species +'Blaze Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.9 m (6′03″)';
+        document.getElementById('konten5').innerHTML= Weight +'52.0 kg (114.6 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'BlazeSpeed Boost (hidden ability)';
+        }   
+        function klikBlastoise(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/blastoise.jpg')";
+        document.getElementById('nama').innerHTML=nBlastoise;
+        document.getElementById('konten1').innerHTML= National_no +'260';
+        document.getElementById('konten2').innerHTML= Type +'Water Ground' ;
+        document.getElementById('konten3').innerHTML= Species +'Mud Fish  Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.5 m (4′11″)';
+        document.getElementById('konten5').innerHTML= Weight +'81.9 kg (180.6 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'Torrent Damp (hidden ability)';
+        }   
+        function klikCharizard(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/charizard.jpg')";
+        document.getElementById('nama').innerHTML=nCharizard;
+        document.getElementById('konten1').innerHTML= National_no +'006';
+        document.getElementById('konten2').innerHTML= Type +'Fire Flying' ;
+        document.getElementById('konten3').innerHTML= Species +'Flame Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.7 m (5′07″)';
+        document.getElementById('konten5').innerHTML= Weight +'90.5 kg (199.5 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +' Blaze Solar Power hidden ability)';
+        }   
+        function klikFeraligathr(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/feraligathr.jpg')";
+        document.getElementById('nama').innerHTML=nFeraligathr;
+        document.getElementById('konten1').innerHTML= National_no +'160';
+        document.getElementById('konten2').innerHTML= Type +'Water ' ;
+        document.getElementById('konten3').innerHTML= Species +'Big Jaw Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'2.3 m (7′07″)';
+        document.getElementById('konten5').innerHTML= Weight +'88.8 kg (195.8 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'Torrent Sheer Force (hidden ability)';
+        }   
+        function klikMeganium(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/meganium.jpg')";
+        document.getElementById('nama').innerHTML=nMeganium;
+        document.getElementById('konten1').innerHTML= National_no +'154';
+        document.getElementById('konten2').innerHTML= Type +'Grass' ;
+        document.getElementById('konten3').innerHTML= Species +'Herb Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'	1.8 m (5′11″)';
+        document.getElementById('konten5').innerHTML= Weight +'100.5 kg (221.6 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +' Overgrow Leaf Guard  (hidden ability)';
+        }   
+        function klikSceptile(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/sceptile.jpg')";
+        document.getElementById('nama').innerHTML=nScerptile;
+        document.getElementById('konten1').innerHTML= National_no +'254';
+        document.getElementById('konten2').innerHTML= Type +'Grass' ;
+        document.getElementById('konten3').innerHTML= Species +'Forest Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.7 m (5′07″)';
+        document.getElementById('konten5').innerHTML= Weight +'52.2 kg (115.1 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'Overgrow Unburden (hidden ability)';
+        }   
+        function klikSwampert(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/swampert.jpg')";
+        document.getElementById('nama').innerHTML=nSwampert;
+        document.getElementById('konten1').innerHTML= National_no +'260';
+        document.getElementById('konten2').innerHTML= Type +'Water Ground' ;
+        document.getElementById('konten3').innerHTML= Species +'Mud Fish  Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.5 m (4′11″)';
+        document.getElementById('konten5').innerHTML= Weight +'81.9 kg (180.6 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'Torrent Damp (hidden ability)';
+        }     
+        function klikTyphlosion(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/typhlosion.jpg')";
+        document.getElementById('nama').innerHTML=nTypholision;
+        document.getElementById('konten1').innerHTML= National_no +'157';
+        document.getElementById('konten2').innerHTML= Type +'Fire' ;
+        document.getElementById('konten3').innerHTML= Species +'Volcano Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'1.7 m (5′07″)';
+        document.getElementById('konten5').innerHTML= Weight +'79.5 kg (175.3 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +'Blaze Flash Fire (hidden ability)';
+        }  
+        function klikVenusaur(){
+        document.getElementById('banner').style.backgroundImage= "url('foto/venusaur.jpg')";
+        document.getElementById('nama').innerHTML=nVenusaur;
+        document.getElementById('konten1').innerHTML= National_no +'003';
+        document.getElementById('konten2').innerHTML= Type +'Grass Poison' ;
+        document.getElementById('konten3').innerHTML= Species +'Seed Pokémon';
+        document.getElementById('konten4').innerHTML= Height +'2.0 m (6′07″)';
+        document.getElementById('konten5').innerHTML= Weight +'100.0 kg (220.5 lbs)';
+        document.getElementById('konten6').innerHTML= Abilities +' Overgrow Chlorophyll (hidden ability)';
+        }      
+
+      
+</script>
+</body>
+
+</html>
+
+
+        <!-- <p>National No : 260<br>
+        <p>Type        : WATER GROUND<br>
+        <p>Species     : Mud Fish Pokémon<br>
+        <p>Weight	   : 81.9 kg (180.6 lbs)<br>
+        <p>Abilities   : Torrent Damp (hidden ability)<br>
+        <p>Local №     : 009 (Ruby/Sapphire/Emerald)<br>
+                         009 (Omega Ruby/Alpha Sapphire)<br> </p> -->

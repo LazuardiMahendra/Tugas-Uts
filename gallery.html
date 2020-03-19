@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            width: auto;
+            height: auto;
+            margin-top:50px; 
+            margin-left: 100px;
+        }
+
+        .kotak{
+            width: 375px;
+            height: 210px;
+            /* background-color: black; */
+            margin: 10px,10px,10px,10px;
+            border: solid purple 1px;
+            position: absolute;
+            background-size:contain;         
+        }
+
+        .kotak1{
+            width: 130px;
+            height: 66px;
+            float: left,top;
+            border: solid purple 1px;
+            margin-left: 379px;
+
+            background-image: url("foto/pic_1.png");
+            background-size: cover;
+        }
+
+        .kotak2{
+            width: 130px;
+            height: 66px;
+            float: left,top;
+            margin-left: 379px;
+            margin-top: 3px;
+            border: solid purple 1px;
+
+            background-image: url("foto/pic_2.png");
+            background-size: cover;
+        }
+
+        .kotak3{
+            width: 130px;
+            height: 66px;
+            float: left,top;
+            margin-left: 379px;
+            margin-top: 3px;
+            border: solid purple 1px;
+
+            background-image: url("foto/pic_3.png");
+            background-size: cover;
+        }
+        </style>
+
+
+
+<body>
+
+    <div class="container"></div>
+
+    <div class="kotak" id="kotak" ></div>
+    <div class="kotak1" id="kotak1" onclick=" gantibackground1()"></div>
+    <div class="kotak2" id="kotak2" onclick=" gantibackground2()"></div>
+    <div class="kotak3" id="kotak3" onclick=" gantibackground3()"></div>
+
+    
+    <script>
+
+        function gantibackground1(){
+        document.getElementById('kotak').style.backgroundImage="url('foto/pic_1.png')";
+        }
+        function  gantibackground2(){
+        document.getElementById('kotak').style.backgroundImage="url('foto/pic_2.png')";
+        }
+        function  gantibackground3(){
+        document.getElementById('kotak').style.backgroundImage="url('foto/pic_3.png')";
+    }
+
+    </script>
+</body>
+        
+</head>
+
+</html>
